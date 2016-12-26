@@ -1,6 +1,6 @@
 {
   "name": "bzz",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Template strings formatter for avoiding indentation side effect",
   "main": "index.js",
   "files": [
