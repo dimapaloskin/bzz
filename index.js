@@ -1,8 +1,7 @@
 const os = require('os');
 
-const bzz = (gitter, templateString) => {
-  if (!templateString) {
-    templateString = gitter;
+const bzz = (templateString, gitter) => {
+  if (!Number.isInteger(gitter)) {
     gitter = 0;
   }
 

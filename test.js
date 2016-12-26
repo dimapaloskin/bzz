@@ -12,7 +12,7 @@ test('case 1', t => {
 test('case 2', t => {
   const str = '\n    line1\n      line2\n    line3\n';
   const expected = '  line1\n    line2\n  line3';
-  const result = bzz(2, str);
+  const result = bzz(str, 2);
   t.is(result, expected);
   t.pass();
 });
@@ -20,7 +20,7 @@ test('case 2', t => {
 test('case 3', t => {
   const str = '\n    line1\nline2\n    line3\n';
   const expected = '    line1\nline2\n    line3';
-  const result = bzz(2, str);
+  const result = bzz(str, 2);
   t.is(result, expected);
   t.pass();
 });
@@ -33,8 +33,8 @@ test('case 4', t => {
       moo
     bye
   `;
-  const expected = '  hello\n    world\n      meow\n    moo\n  bye';
-  const result = bzz(2, str);
+  const expected = '   hello\n     world\n       meow\n     moo\n   bye';
+  const result = bzz(str, 3);
   t.is(result, expected);
   t.pass();
 });
