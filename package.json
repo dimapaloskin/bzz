@@ -26,5 +26,7 @@
   "xo": {
     "space": true
   },
-  "dependencies": {}
+  "dependencies": {
+    "detect-node": "^2.0.3"
+  }
 }

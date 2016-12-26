@@ -1,16 +1,24 @@
-const os = require('os');
+'use strict';
+
+const isNode = require('detect-node');
+
+let EOL = '\n';
+if (isNode) {
+  const os = require('os');
+  EOL = os.EOL;
+}
 
 const bzz = (templateString, gitter) => {
   if (!Number.isInteger(gitter)) {
     gitter = 0;
   }
 
-  const splitted = templateString.split(os.EOL);
+  const splitted = templateString.split(EOL);
   splitted.shift();
   splitted.pop();
 
   const cleaned = splitted
-    .filter(line => Boolean(line.length) && line !== os.EOL);
+    .filter(line => Boolean(line.length) && line !== EOL);
 
   const minStringGitter = cleaned.reduce((accum, line) => {
     const lineSpaces = line.length - line.trimLeft().length;
@@ -22,7 +30,7 @@ const bzz = (templateString, gitter) => {
     return line.substr(trimNum);
   });
 
-  return trimmed.join(os.EOL);
+  return trimmed.join(EOL);
 };
 
 module.exports = bzz;
