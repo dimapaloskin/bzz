@@ -5,6 +5,8 @@
 [![Build Status](https://travis-ci.org/dimapaloskin/bzz.svg?branch=master)](https://travis-ci.org/dimapaloskin/bzz)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
+![bzz output](https://raw.githubusercontent.com/dimapaloskin/bzz/master/media/bzz.png)
+
 ## Installation
 
 ```
