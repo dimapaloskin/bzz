@@ -1,4 +1,4 @@
-const {EOL} = require('os');
+const os = require('os');
 
 const bzz = (gitter, templateString) => {
   if (!templateString) {
@@ -6,12 +6,12 @@ const bzz = (gitter, templateString) => {
     gitter = 0;
   }
 
-  const splitted = templateString.split(EOL);
+  const splitted = templateString.split(os.EOL);
   splitted.shift();
   splitted.pop();
 
   const cleaned = splitted
-    .filter(line => Boolean(line.length) && line !== EOL);
+    .filter(line => Boolean(line.length) && line !== os.EOL);
 
   const minStringGitter = cleaned.reduce((accum, line) => {
     const lineSpaces = line.length - line.trimLeft().length;
@@ -23,7 +23,7 @@ const bzz = (gitter, templateString) => {
     return line.substr(trimNum);
   });
 
-  return trimmed.join(EOL);
+  return trimmed.join(os.EOL);
 };
 
 module.exports = bzz;
