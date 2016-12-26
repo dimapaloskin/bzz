@@ -1,0 +1,30 @@
+{
+  "name": "bzz",
+  "version": "0.1.0",
+  "description": "Template strings formatter for avoiding indentation side effect",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "xo && ava -v"
+  },
+  "author": "Dima Paloskin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimapaloskin/bzz.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimapaloskin/bzz/issues"
+  },
+  "homepage": "https://github.com/dimapaloskin/bzz#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "space": true
+  },
+  "dependencies": {}
+}
