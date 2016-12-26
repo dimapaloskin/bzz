@@ -1,5 +1,8 @@
 # bzz
-Template strings formatter for avoiding indentation side effect. Format string according minimum found identation and passed gitter.
+Template strings formatter for avoiding indentation side effect. Format string according minimum found identation and passed gitter. 
+[![npm version](https://badge.fury.io/js/bzz.svg)](https://www.npmjs.com/package/bzz)
+[![Build Status](https://travis-ci.org/dimapaloskin/bzz.svg?branch=master)](https://travis-ci.org/dimapaloskin/bzz)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 ## API
 
